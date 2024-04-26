@@ -17,3 +17,5 @@ jobs:
         server: vserver51.axc.eu
         username: git@greppeltocht.scoutingachterhoek.nl
         password: pXxjT7ERuzDeP56KBK8N
+        protocol: ftp
+        port: 21
