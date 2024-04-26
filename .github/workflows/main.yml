@@ -12,10 +12,18 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Push files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        # You may pin to the exact commit or the version.
+  # uses: anvil-solutions/Fast-FTP-Action@de62eeaf1c409a96c7304f3bba8bf8194d0fa98f
+      uses: anvil-solutions/Fast-FTP-Action@2.1.3
       with:
-        server: vserver51.axc.eu/1
+    # FTP server name (you may need to specify a port)
+        server: vserver51.axc.eu
+    # FTP account username
         username: git@greppeltocht.scoutingachterhoek.nl
+    # FTP account password
         password: pXxjT7ERuzDeP56KBK8N
-        protocol: ftp
-        port: 21
+    # Protocol used to deploy (ftp or sftp)
+        method: ftp
+    # The remote folder to copy to, deafults to root FTP folder
+        remote_dir: /1
+          
