@@ -17,11 +17,11 @@ jobs:
       uses: anvil-solutions/Fast-FTP-Action@2.1.3
       with:
     # FTP server name (you may need to specify a port)
-        server: vserver51.axc.eu
+        server: ${{ secrets.FTP_URL }}
     # FTP account username
-        username: git@greppeltocht.scoutingachterhoek.nl
+        username: ${{ secrets.FTP_USERNAME }}
     # FTP account password
-        password: pXxjT7ERuzDeP56KBK8N
+        password: ${{ secrets.FTP_PASSWORD }}
     # Protocol used to deploy (ftp or sftp)
         method: ftp
     # The remote folder to copy to, deafults to root FTP folder
