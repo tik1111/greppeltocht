@@ -14,6 +14,6 @@ jobs:
     - name: Push files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.FTP_URL }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        server: vserver51.axc.eu
+        username: git@greppeltocht.scoutingachterhoek.nl
+        password: pXxjT7ERuzDeP56KBK8N
