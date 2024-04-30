@@ -3,6 +3,7 @@ body {
   padding: 0;
   background: #00953b;
   min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -11,9 +12,19 @@ main {
 
 .container-login {
   width: 25%;
-  padding: 30px;
-  background: #1c5733;
+  padding: 100px 30px 0;
+  margin: 0 auto;
   color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 5px 15px;
 }
 
 h1 {
