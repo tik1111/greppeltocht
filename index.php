@@ -2,7 +2,7 @@
 
 <main>
   <div class="container-login">
-    <h1>Inloggen</h1>
+    <h1>Greppeltocht <?= date('Y') ?></h1>
 
     <form action="">
       <input type="text" name="username" placeholder="Gebruikersnaam">
