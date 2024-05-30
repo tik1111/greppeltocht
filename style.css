@@ -14,19 +14,20 @@ body {
 
 main {
   min-height: 100vh;
+  padding-top: 100px;
 }
 
 .container-login {
   width: 25%;
+  min-width: 410px;
   padding: 30px;
-  margin: 100px auto 0;
+  margin: 0 auto 0;
   background: #fff;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 input {
@@ -58,6 +59,7 @@ input {
 h1 {
   margin: 0;
   font-family: "Patua One", serif;
+  margin-bottom: 15px;
 }
 
 button {
