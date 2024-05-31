@@ -19,9 +19,9 @@ main {
 
 .container-login {
   width: 33%;
-  min-width: 410px;
+  min-width: 450px;
   min-height: 100vh;
-  padding: 30px;
+  padding: 45px 30px;
   margin: 0 0 0 auto;
   background: #fff;
 }
@@ -41,7 +41,7 @@ input {
   height: auto !important;
 
   line-height: 28px;
-  padding: 11px 20px 9px 20px;
+  padding: 10px 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   border: 1px solid #2c2a2b;
@@ -85,4 +85,10 @@ button {
 button:hover {
   background: #d10000;
   color: #fff !important;
+}
+
+img {
+  position: absolute;
+  bottom: 45px;
+  left: 45px;
 }
