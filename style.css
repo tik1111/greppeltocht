@@ -97,9 +97,12 @@ img {
   img {
     bottom: auto;
     top: 45px;
+    z-index: -1;
   }
 
   .container-login {
+    min-width: auto;
+    min-height: auto;
     position: absolute;
     margin: 0 30px;
     bottom: 30px;
