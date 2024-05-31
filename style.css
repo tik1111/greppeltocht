@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #0060ae;
-  height: 100vh;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +20,7 @@ main {
 .container-login {
   width: 33%;
   min-width: 450px;
-  height: 100vh;
+  height: 100%;
   padding: 45px 30px;
   margin: 0 0 0 auto;
   background: #fff;
@@ -96,7 +96,7 @@ img {
 @media screen and (max-width: 700px) {
   img {
     bottom: auto;
-    top: 45px;
+    top: 25px;
     z-index: -1;
     max-height: 75vh;
   }
@@ -104,7 +104,7 @@ img {
   .container-login {
     min-width: auto;
     height: auto;
-    position: absolute;
+    position: fixed;
     margin: 0 15px;
     bottom: 15px;
     width: calc(100% - 30px);
