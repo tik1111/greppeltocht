@@ -14,6 +14,7 @@
     </form>
   </div>
 
+  <img src="/img/mario.webp" />
 </main>
 
 <?php include_once('footer.php'); ?>
