@@ -4,6 +4,10 @@
   <div class="container-login">
     <h1>Greppeltocht <?= date('Y') ?></h1>
 
+    <?php if(isset($_GET['error'])){ ?>
+      Er is iets mis gegaan bij het inloggen!
+    <?php } ?>
+
     <form action="authenticate.php" method="post">
       <input type="text" name="username" placeholder="Gebruikersnaam">
       <input type="password" name="password" placeholder="Wachtwoord">
@@ -15,12 +19,7 @@
     </form>
   </div>
 
-  <?php if(isset($_GET['error'])){ ?>
-    <img src="/img/bowser.webp" />
-  <?php } else { ?>
-    <img src="/img/mario.webp" />
-  <?php } ?>
-
+  <img src="/img/mario.webp" />
 
 </main>
 
