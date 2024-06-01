@@ -41,6 +41,10 @@
                 $_SESSION['name'] = $_POST['username'];
                 $_SESSION['id'] = $id;
                 echo 'Welcome back, ' . htmlspecialchars($_SESSION['name'], ENT_QUOTES) . '!';
+
+                // Incorrect password
+                header('Location: admin/index.php');
+	            exit;
             } else {
                 // Incorrect password
                 header('Location: index.php');
