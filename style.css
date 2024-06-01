@@ -24,6 +24,16 @@ main {
   padding: 45px 30px;
   margin: 0 0 0 auto;
   background: #fff;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.error {
+  color: #e60012;
+  font-weight: bold;
+  font-family: "Patua One", serif;
 }
 
 form {
