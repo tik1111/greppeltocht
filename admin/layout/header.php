@@ -31,7 +31,7 @@
           </a>
         </li>
         <li>
-          <a href="/admin/">
+          <a href="/admin/logout.php">
             <i class="fas fa-sign-out-alt"></i>
           </a>
         </li>
