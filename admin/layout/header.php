@@ -1,4 +1,4 @@
-<?php require_once('../authenticate.php'); ?>
+<?php require_once('authenticate.php'); ?>
 
 <!DOCTYPE html>
 <html lang="nl">
