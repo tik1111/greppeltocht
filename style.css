@@ -99,6 +99,7 @@ img {
     top: 25px;
     z-index: -1;
     max-height: 75vh;
+    max-width: calc(100vw - 90px);
   }
 
   .container-login {
