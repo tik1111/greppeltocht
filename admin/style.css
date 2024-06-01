@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0060ae;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 40px;
+}
