@@ -43,16 +43,16 @@
                 echo 'Welcome back, ' . htmlspecialchars($_SESSION['name'], ENT_QUOTES) . '!';
 
                 // Incorrect password
-                header('Location: admin/index.php');
+                header('Location: /admin/');
 	            exit;
             } else {
                 // Incorrect password
-                header('Location: index.php');
+                header('Location: /');
 	            exit;
             }
         } else {
             // Incorrect username
-            header('Location: index.php');
+            header('Location: /');
             exit;
         }
 
