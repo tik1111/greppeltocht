@@ -19,4 +19,14 @@ body {
   bottom: 0;
   left: 0;
   padding: 0 0 40px;
+  background: #d10000;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation ul li {
+  list-style: none;
 }
