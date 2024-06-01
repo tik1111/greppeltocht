@@ -5,7 +5,9 @@
     <h1>Greppeltocht <?= date('Y') ?></h1>
 
     <?php if(isset($_GET['error'])){ ?>
-      Er is iets mis gegaan bij het inloggen!
+      <div class="error">
+        Er is iets mis gegaan bij het inloggen!
+      </div>
     <?php } ?>
 
     <form action="authenticate.php" method="post">
