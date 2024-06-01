@@ -15,7 +15,13 @@
     </form>
   </div>
 
-  <img src="/img/mario.webp" />
+  <?php if(isset($_GET['error'])){ ?>
+    <img src="/img/bowser.webp" />
+  <?php } else { ?>
+    <img src="/img/mario.webp" />
+  <?php } ?>
+
+
 </main>
 
 <?php include_once('layout/footer.php'); ?>
