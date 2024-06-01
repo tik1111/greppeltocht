@@ -1,4 +1,4 @@
-<?php include_once('asset/header.php'); ?>
+<?php include_once('layout/header.php'); ?>
 
 <main>
   <div class="container-login">
@@ -18,4 +18,4 @@
   <img src="/img/mario.webp" />
 </main>
 
-<?php include_once('asset/footer.php'); ?>
+<?php include_once('layout/footer.php'); ?>
