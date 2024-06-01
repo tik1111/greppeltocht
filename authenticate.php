@@ -47,12 +47,12 @@
 	            exit;
             } else {
                 // Incorrect password
-                header('Location: /');
+                header('Location: /?error=1');
 	            exit;
             }
         } else {
             // Incorrect username
-            header('Location: /');
+            header('Location: /?error=1');
             exit;
         }
 
