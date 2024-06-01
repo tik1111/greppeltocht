@@ -43,11 +43,13 @@
                 echo 'Welcome back, ' . htmlspecialchars($_SESSION['name'], ENT_QUOTES) . '!';
             } else {
                 // Incorrect password
-                echo 'Incorrect username and/or password!';
+                header('Location: index.php');
+	            exit;
             }
         } else {
             // Incorrect username
-            echo 'Incorrect username and/or password!';
+            header('Location: index.php');
+            exit;
         }
 
         $stmt->close();
