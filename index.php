@@ -1,3 +1,5 @@
+<?php require_once('../config.php'); ?>
+
 <?php include_once('header.php'); ?>
 
 <main>
@@ -11,6 +13,11 @@
       <button type="submit">
         Inloggen
       </button>
+
+      <pre>
+        <?php print_r($_CONFIG); ?>
+      </pre>
+
     </form>
   </div>
 
