@@ -12,6 +12,11 @@ body {
   -webkit-box-sizing: border-box;
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
+
 .navigation {
   position: fixed;
   width: 100%;
