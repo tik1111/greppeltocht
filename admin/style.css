@@ -37,3 +37,8 @@ body {
   font-size: 20px;
   padding: 10px 50px 40px;
 }
+
+#map {
+  height: 100%;
+  width: 100%;
+}

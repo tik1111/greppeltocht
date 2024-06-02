@@ -1,3 +1,3 @@
-<script src="index.js"></script>
+    <script src="/admin/index.js"></script>
   </body>
 </html>
