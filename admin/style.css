@@ -30,6 +30,7 @@ main {
   display: flex;
   justify-content: space-around;
   padding: 0;
+  margin-bottom: env(safe-area-inset-bottom);
 }
 
 .navigation ul li {
@@ -40,7 +41,7 @@ main {
 .navigation ul li a {
   color: #fff;
   font-size: 20px;
-  padding: 10px 50px calc(10px + env(safe-area-inset-bottom));
+  padding: 10px 50px;
 }
 
 #map {
