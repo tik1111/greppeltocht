@@ -31,7 +31,7 @@
           </a>
         </li>
         <li>
-          <a href="/admin/">
+          <a href="/admin/tasks.php">
             <i class="fas fa-tasks"></i>
           </a>
         </li>
