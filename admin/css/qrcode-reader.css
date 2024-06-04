@@ -13,18 +13,18 @@
 #qrr-container {
   font-family: sans-serif;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 20px;
+  left: 20px;
+  right: 20px;
   background: white;
-  padding: 10px;
-  width: 90%;
-  height: 90%;
   margin: auto;
   display: none;
   z-index: 20001;
-  border-radius: 10px;
+}
+
+#qrr-container:before {
+  content: "Scan QR code";
+  font-family: "Patua One", serif;
 }
 
 #qrr-container h1 {
@@ -52,7 +52,6 @@
 
 #qrr-canvas {
   display: block;
-  height: 65%;
   max-width: 90%;
   overflow-x: scroll;
   cursor: pointer;
@@ -64,12 +63,13 @@
 }
 
 #qrr-output {
-  width: 90%;
+  display: none;
+  /* width: 90%;
   max-height: 15%;
   margin: 20px auto 10px;
   background: #eee;
   padding: 10px;
-  overflow-y: auto;
+  overflow-y: auto; */
 }
 
 #qrr-ok {
