@@ -23,8 +23,8 @@
     QRCodeReader = function () {};
 
   $.qrCodeReader = {
-    jsQRpath: "../js/jsQR/jsQR.min.js",
-    beepPath: "../audio/beep.mp3",
+    jsQRpath: "../admin/js/jsQR/jsQR.min.js",
+    beepPath: "../admin/audio/beep.mp3",
     instance: null,
     defaults: {
       // single read or multiple readings/
