@@ -83,9 +83,9 @@ input {
   border: 1px solid #2c2a2b;
   width: 100%;
   -webkit-appearance: none;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 
 .button {
@@ -107,9 +107,9 @@ input {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 
 .button:hover {
