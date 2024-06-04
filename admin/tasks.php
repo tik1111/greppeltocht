@@ -1,9 +1,11 @@
 <?php include_once('layout/header.php'); ?>
 
 <main>
-    <div class="content">
+    <div class="title">
         <h1>Opdrachten</h1>
+    </div>
 
+    <div class="content">
         <form action="">
             <input id="single" type="text" size="255">
 

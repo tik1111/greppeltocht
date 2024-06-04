@@ -17,12 +17,18 @@ main {
   z-index: 1;
 }
 
-div.content {
+div.title {
   padding: 15px;
+  background: #0060ae;
 }
 
-div.content h1 {
+div.title h1 {
   font-family: "Patua One", serif;
+  color: #fff;
+}
+
+div.content {
+  padding: 15px;
 }
 
 .navigation {
