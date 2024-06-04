@@ -1,4 +1,4 @@
-    <script src="/admin/qrcode.js"></script>
-    <script src="/admin/index.js"></script>
+    <script src="/admin/js/qrcode-reader.js?v=20190604"></script>
+    <script src="/admin/css/index.js"></script>
   </body>
 </html>

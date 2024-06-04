@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Greppeltocht</title>
-    <link rel="stylesheet" href="../admin/style.css">
+    <link rel="stylesheet" href="../admin/css/style.css">
+    <link rel="stylesheet" href="../admin/css/qrcode-reader.css">
+
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
