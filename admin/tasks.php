@@ -11,7 +11,7 @@
 
             <button type="button" class="button qrcode-reader" id="openreader-single"
                 data-qrr-target="#single"
-                data-qrr-audio-feedback="false">
+                data-qrr-audio-feedback="true">
                 Scan code
             </button>
 
