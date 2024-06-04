@@ -24,7 +24,7 @@
 
   $.qrCodeReader = {
     jsQRpath: "../admin/js/jsQR/jsQR.min.js",
-    beepPath: "../admin/audio/beep.mp3",
+    beepPath: "../admin/audio/mario.mp3",
     instance: null,
     defaults: {
       // single read or multiple readings/
