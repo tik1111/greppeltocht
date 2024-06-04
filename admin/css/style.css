@@ -17,6 +17,10 @@ main {
   z-index: 1;
 }
 
+div.content {
+  padding: 15px;
+}
+
 .navigation {
   position: fixed;
   width: 100%;
