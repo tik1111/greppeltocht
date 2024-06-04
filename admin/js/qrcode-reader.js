@@ -84,7 +84,7 @@
       qrr.okBtn = $('<a id="qrr-ok">OK</a>');
 
       qrr.loadingMessage = $(
-        '<div id="qrr-loading-message">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>'
+        '<div id="qrr-loading-message">Geen toegang tot de videostream (zorg ervoor dat je een webcam hebt ingeschakeld)</div>'
       );
       qrr.canvas = $('<canvas id="qrr-canvas" class="hidden"></canvas>');
       qrr.audio = $(
@@ -264,7 +264,7 @@
       var codeRead = false;
       var canvas = qrr.canvas[0].getContext("2d");
 
-      qrr.loadingMessage.text("⌛ Loading video...");
+      qrr.loadingMessage.text("Camera laden...");
       qrr.canvas.off("click.qrCodeReader", qrr.startReading);
 
       if (qrr.video.readyState === qrr.video.HAVE_ENOUGH_DATA) {
