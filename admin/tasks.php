@@ -5,13 +5,12 @@
         <h1>Opdrachten</h1>
 
         <form action="">
-            <input id="single" type="text" size="50">
+            <input id="single" type="text" size="255">
 
-            <button type="button" class="qrcode-reader" id="openreader-single"
+            <button type="button" class="button qrcode-reader" id="openreader-single"
                 data-qrr-target="#single"
-                data-qrr-audio-feedback="false"
-                data-qrr-qrcode-regexp="^https?:\/\/">
-                Read QRCode
+                data-qrr-audio-feedback="false">
+                Scan code
             </button>
 
         </form>
