@@ -1,23 +1,25 @@
 <?php include_once('layout/header.php'); ?>
 
 <main>
-    <h1>Opdrachten</h1>
+    <div class="content">
+        <h1>Opdrachten</h1>
 
-    <form action="">
-        <input id="single" type="text" size="50">
+        <form action="">
+            <input id="single" type="text" size="50">
 
-        <button type="button" class="qrcode-reader" id="openreader-single"
-            data-qrr-target="#single"
-            data-qrr-audio-feedback="false"
-            data-qrr-qrcode-regexp="^https?:\/\/">
-            Read QRCode
-        </button>
+            <button type="button" class="qrcode-reader" id="openreader-single"
+                data-qrr-target="#single"
+                data-qrr-audio-feedback="false"
+                data-qrr-qrcode-regexp="^https?:\/\/">
+                Read QRCode
+            </button>
 
-    </form>
+        </form>
 
-    <!-- https://blog.minhazav.dev/research/html5-qrcode -->
+        <!-- https://blog.minhazav.dev/research/html5-qrcode -->
 
-    <!-- https://github.com/mauntrelio/qrcode-reader -->
+        <!-- https://github.com/mauntrelio/qrcode-reader -->
+    </div>
 </main>
 
 <?php include_once('layout/footer.php'); ?>

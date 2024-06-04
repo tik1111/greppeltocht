@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #f4f4f4;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,6 +15,10 @@ body {
 main {
   position: relative;
   z-index: 1;
+}
+
+div.content {
+  padding: 15px;
 }
 
 .navigation {
