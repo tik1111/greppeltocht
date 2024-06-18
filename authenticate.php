@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    require_once('logic/db_connect.php');
+    require_once('/logic/db_connect.php');
 
     // Secure session settings
     ini_set('session.cookie_httponly', 1);
