@@ -1,19 +1,14 @@
 <?php
     session_start();
 
-    require_once('../config.php');
+    require_once('logic/db_connect.php');
 
-    $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = $_CONFIG['db_user'];
-    $DATABASE_PASS = $_CONFIG['db_password'];
-    $DATABASE_NAME = $_CONFIG['db_name'];
-    // Try and connect using the info above.
-    $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+    // Secure session settings
+    ini_set('session.cookie_httponly', 1);
+    ini_set('session.cookie_secure', 1);
+    ini_set('session.use_strict_mode', 1);
 
-    if ( mysqli_connect_errno() ) {
-        // If there is an error with the connection, stop the script and display the error.
-        exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-    }
+    $con = db_connect();
 
     if ( !isset($_POST['username'], $_POST['password']) ) {
         // Could not get the data that should have been sent.
