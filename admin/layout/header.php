@@ -44,3 +44,9 @@
         </li>
       </ul>
     </nav>
+
+    <div class="buttons">
+      <span class="button" data-action="show_qr">
+        <i class="fas fa-qrcode"></i>
+      </span>
+    </div>
