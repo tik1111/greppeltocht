@@ -66,10 +66,17 @@ div.content {
   position: fixed;
   bottom: 0;
   right: 15px;
-  margin-bottom: calc(52px + env(safe-area-inset-bottom));
+  margin-bottom: calc(65px + env(safe-area-inset-bottom));
   z-index: 999;
   display: flex;
   gap: 10px;
+}
+
+.buttons .button {
+  aspect-ratio: 1;
+  width: 60px;
+  line-height: 40px;
+  text-align: center;
 }
 
 #map {
