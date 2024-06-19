@@ -21,7 +21,9 @@
 
         <!-- https://github.com/mauntrelio/qrcode-reader -->
 
-        <img src="includes/qrcode.php?s=qr&d=HELLO%20WORLD&sf=8&ms=r">
+        <!-- <img src="includes/qrcode.php?s=qr&d=HELLO%20WORLD&sf=8&ms=r"> -->
+
+        <?php include_once('popups/qrcode.php'); ?>
     </div>
 </main>
 
