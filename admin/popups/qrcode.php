@@ -1,22 +1,18 @@
 <?php
     include '../admin/includes/qrcode.php';
 
-    $data = 'TEST';
-    $options = [];
-
-    $generator = new QRCode($data, $options);
-
-    /* Output directly to standard output. */
-    $generator->output_image();
-
-    /* Create bitmap image. */
-    $image = $generator->render_image();
-    imagepng($image);
-    imagedestroy($image);
+    $data = [
+        'team_id'=> '1',
+        'time'=> time()
+    ];
 ?>
 
 
 <div class="popup-overlay"></div>
 <div class="popup-container">
+    <pre>
+        <?php print_r($data); ?>
+    </pre>
 
+    <img src="../admin/includes/qrcode.php?s=qr&d=<?= urlencode(json_encode($data)) ?>&sf=8&ms=r">
 </div>
