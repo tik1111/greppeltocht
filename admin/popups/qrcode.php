@@ -1,5 +1,5 @@
 <?php
-    include '../includes/qrcode.php';
+    include '../admin/includes/qrcode.php';
 
     $data = 'TEST';
     $options = [];
