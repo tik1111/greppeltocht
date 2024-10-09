@@ -19,9 +19,9 @@ $(document).ready(function () {
       url: "ajax/ajax.qrcode.php",
       dataType: "json",
       success: function (data) {
-        console.log(data.image);
-
         $(".qrcode-image").attr("src", data.image);
+
+        $('.button[data-popup="qrcode"]').addClass("open");
       },
     });
   });
