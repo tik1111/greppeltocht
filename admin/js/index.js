@@ -16,7 +16,7 @@ $(document).ready(function () {
     $.ajax({
       type: "GET",
       cache: false,
-      url: "../ajax/ajax.qrcode.php",
+      url: "ajax/ajax.qrcode.php",
       dataType: "json",
       success: function (data) {
         console.log("succes");
