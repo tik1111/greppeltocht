@@ -3,7 +3,7 @@
     header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
     header('Content-type: application/json');
 
-    require_once('../authenticate.php');
+    require_once('/admin/authenticate.php');
 
     $response_array['data'] = [
         'team_id' => $_SESSION['id'],
