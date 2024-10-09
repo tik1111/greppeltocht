@@ -1,8 +1,8 @@
 <?php
     include '../admin/includes/qrcode.php';
 ?>
-
-<div class="popup-overlay"></div>
-<div class="popup-container">
-    <img class="qrcode-image" src="">
+<div class="popup">
+    <div class="popup__container">
+        <img class="qrcode-image" src="">
+    </div>
 </div>
