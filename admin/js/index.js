@@ -22,17 +22,19 @@ $(document).ready(function () {
 });
 
 function get_qrcode(open_popup = false) {
-  $.ajax({
-    type: "GET",
-    cache: false,
-    url: "ajax/ajax.qrcode.php",
-    dataType: "json",
-    success: function (data) {
-      $(".qrcode-image").attr("src", data.image);
+  if ($('[data-popup="qrcode"]').hasClass("open")) {
+    $.ajax({
+      type: "GET",
+      cache: false,
+      url: "ajax/ajax.qrcode.php",
+      dataType: "json",
+      success: function (data) {
+        $(".qrcode-image").attr("src", data.image);
 
-      if (open_popup) {
-        $('[data-popup="qrcode"]').addClass("open");
-      }
-    },
-  });
+        if (open_popup) {
+          $('[data-popup="qrcode"]').addClass("open");
+        }
+      },
+    });
+  }
 }
