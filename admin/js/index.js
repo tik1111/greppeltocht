@@ -13,16 +13,26 @@ $(document).ready(function () {
   }
 
   $('.button[data-action="show_qr"]').click(function (event) {
-    $.ajax({
-      type: "GET",
-      cache: false,
-      url: "ajax/ajax.qrcode.php",
-      dataType: "json",
-      success: function (data) {
-        $(".qrcode-image").attr("src", data.image);
-
-        $('[data-popup="qrcode"]').addClass("open");
-      },
-    });
+    get_qrcode(true);
   });
+
+  setInterval(function () {
+    get_qrcode(true);
+  }, 1000);
 });
+
+function get_qrcode(open_popup = false) {
+  $.ajax({
+    type: "GET",
+    cache: false,
+    url: "ajax/ajax.qrcode.php",
+    dataType: "json",
+    success: function (data) {
+      $(".qrcode-image").attr("src", data.image);
+
+      if (open_popup) {
+        $('[data-popup="qrcode"]').addClass("open");
+      }
+    },
+  });
+}
