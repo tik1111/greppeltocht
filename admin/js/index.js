@@ -21,7 +21,7 @@ $(document).ready(function () {
       success: function (data) {
         $(".qrcode-image").attr("src", data.image);
 
-        $('.button[data-popup="qrcode"]').addClass("open");
+        $('[data-popup="qrcode"]').addClass("open");
       },
     });
   });
