@@ -22,7 +22,7 @@ $(document).ready(function () {
 });
 
 function get_qrcode(open_popup = false) {
-  if ($('[data-popup="qrcode"]').hasClass("open")) {
+  if ($('[data-popup="qrcode"]').hasClass("open") || open_popup) {
     $.ajax({
       type: "GET",
       cache: false,
