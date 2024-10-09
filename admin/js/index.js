@@ -17,7 +17,7 @@ $(document).ready(function () {
   });
 
   setInterval(function () {
-    get_qrcode(true);
+    get_qrcode(false);
   }, 1000);
 });
 
