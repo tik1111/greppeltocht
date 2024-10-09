@@ -11,4 +11,16 @@ $(document).ready(function () {
   if ($(".qrcode-reader").length) {
     $(".qrcode-reader").qrCodeReader();
   }
+
+  $('.button[data-action="show_qr"]').click(function (event) {
+    $.ajax({
+      type: "GET",
+      cache: false,
+      url: "../ajax/ajax.qrcode.php",
+      dataType: "json",
+      success: function (data) {
+        console.log("succes");
+      },
+    });
+  });
 });
