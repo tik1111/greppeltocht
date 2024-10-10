@@ -3,7 +3,6 @@
     <?php include_once('popups/qrcode.php'); ?>
     <?php include_once('form/qrcode.php'); ?>
 
-
     <input type="hidden" class="latitude" />
     <input type="hidden" class="longitude" />
 

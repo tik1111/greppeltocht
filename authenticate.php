@@ -21,7 +21,7 @@
     }
 
     // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-    if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
+    if ($stmt = $con->prepare('SELECT id, password, role FROM accounts WHERE username = ?')) {
         // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
         $stmt->bind_param('s', $_POST['username']);
         $stmt->execute();
@@ -40,6 +40,7 @@
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['name'] = $_POST['username'];
                 $_SESSION['id'] = $id;
+                $_SESSION['role'] = $role;
 
                 // Incorrect password
                 header('Location: /admin/');
