@@ -12,18 +12,9 @@
     $DATABASE_PASS = $_CONFIG['db_password'];
     $DATABASE_NAME = $_CONFIG['db_name'];
 
-    // $response_array['data'] = [
-    //     'team_id' => $_SESSION['id'],
-    //     'time' => time(),
-    //     'latitude' => $_GET['latitude'],
-    //     'longitude' => $_GET['longitude'],
-    // ];
-
-    // $response_array['image'] = '../admin/includes/qrcode.php?s=qr&d='. urlencode(json_encode($response_array['data'])) . '&sf=8&ms=r';
-    // $response_array['time'] = date('d-m-Y H:i:s', time());
+    $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
     $data = json_decode($_POST['data'], true);
-
     $sql = "
         INSERT INTO
             finds
@@ -34,11 +25,7 @@
             latitude = '".$data['latitude']."',
             longitude = '".$data['longitude']."'
     ";
-
-    echo $sql;
-
-
-    $response_array['data'] = $data;
+    mysqli_query($con, $sql );
 
     $response_array['succes'] = true;
 
