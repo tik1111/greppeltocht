@@ -21,11 +21,13 @@
         SET
             hider_id = '".$data['team_id']."',
             seeker_id = '".$_SESSION['id']."',
-            datetime = '".date('d-m-Y H:i:s', $data['time'])."',
+            datetime = '".date('Y-m-d H:i:s', $data['time'])."',
             latitude = '".$data['latitude']."',
             longitude = '".$data['longitude']."'
     ";
     mysqli_query($con, $sql );
+
+    echo $sql;
 
     $response_array['succes'] = true;
 
