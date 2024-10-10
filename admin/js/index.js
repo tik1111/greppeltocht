@@ -35,23 +35,25 @@ function get_qrcode(open_popup = false) {
       $("input.longitude").val(position.coords.longitude);
     });
 
-    $.ajax({
-      type: "GET",
-      cache: false,
-      url: "ajax/ajax.qrcode.php",
-      dataType: "json",
-      data: {
-        latitude: $("input.latitude").val(),
-        longitude: $("input.longitude").val(),
-      },
-      success: function (data) {
-        $(".qrcode-image").attr("src", data.image);
-        $(".qrcode-time").html(data.time);
+    setTimeout(() => {
+      $.ajax({
+        type: "GET",
+        cache: false,
+        url: "ajax/ajax.qrcode.php",
+        dataType: "json",
+        data: {
+          latitude: $("input.latitude").val(),
+          longitude: $("input.longitude").val(),
+        },
+        success: function (data) {
+          $(".qrcode-image").attr("src", data.image);
+          $(".qrcode-time").html(data.time);
 
-        if (open_popup) {
-          $('[data-popup="qrcode"]').addClass("open");
-        }
-      },
-    });
+          if (open_popup) {
+            $('[data-popup="qrcode"]').addClass("open");
+          }
+        },
+      });
+    }, 500);
   }
 }
