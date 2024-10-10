@@ -50,7 +50,7 @@
         <i class="fas fa-qrcode"></i>
       </span>
 
-      <button type="button" class="button" id="openreader-single"
+      <button type="button" class="button qrcode-reader" id="openreader-single"
         data-qrr-target="#single"
         data-qrr-audio-feedback="true">
           <i class="fas fa-plus"></i>
