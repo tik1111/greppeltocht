@@ -15,6 +15,10 @@
     // $response_array['image'] = '../admin/includes/qrcode.php?s=qr&d='. urlencode(json_encode($response_array['data'])) . '&sf=8&ms=r';
     // $response_array['time'] = date('d-m-Y H:i:s', time());
 
+    $data = json_decode($_POST['data'], true);
+
+    $response_array['data'] = $data;
+
     $response_array['succes'] = true;
 
     echo json_encode($response_array);
