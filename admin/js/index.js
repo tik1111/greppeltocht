@@ -27,14 +27,12 @@ $(document).ready(function () {
 
 function get_qrcode(open_popup = false) {
   if ($('[data-popup="qrcode"]').hasClass("open") || open_popup) {
-    let latitude = "";
-    let longitude = "";
-
     navigator.geolocation.getCurrentPosition(function (position) {
       // console.log(position.coords.latitude);
       // console.log(position.coords.longitude);
-      latitude.push(position.coords.latitude);
-      longitude.push(position.coords.longitude);
+
+      $("input.latitude").val(position.coords.latitude);
+      $("input.longitude").val(position.coords.longitude);
     });
 
     $.ajax({
@@ -43,8 +41,8 @@ function get_qrcode(open_popup = false) {
       url: "ajax/ajax.qrcode.php",
       dataType: "json",
       data: {
-        latitude: latitude,
-        longitude: longitude,
+        latitude: $("input.latitude").val(),
+        longitude: $("input.longitude").val(),
       },
       success: function (data) {
         $(".qrcode-image").attr("src", data.image);
