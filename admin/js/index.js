@@ -23,6 +23,12 @@ $(document).ready(function () {
   setInterval(function () {
     get_qrcode(false);
   }, 10000);
+
+  $("input[name='data']").on("change", function () {
+    if ($("input[name='data']").val() != "") {
+      save_qrcode();
+    }
+  });
 });
 
 function get_qrcode(open_popup = false) {
@@ -53,4 +59,21 @@ function get_qrcode(open_popup = false) {
       });
     }, 500);
   }
+}
+
+function save_qrcode() {
+  $.ajax({
+    type: "POST",
+    cache: false,
+    url: "ajax/ajax.savescan.php",
+    dataType: "json",
+    data: {
+      data: $("input[name='data']").val(),
+    },
+    success: function (data) {
+      console.log(data);
+
+      $("input[name='data']").val("");
+    },
+  });
 }
