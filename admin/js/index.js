@@ -9,7 +9,13 @@ $(document).ready(function () {
   }
 
   if ($(".qrcode-reader").length) {
-    $(".qrcode-reader").qrCodeReader();
+    $(".qrcode-reader").qrCodeReader({
+      callback: function (codes) {
+        console.log(codes);
+
+        save_qrcode();
+      },
+    });
   }
 
   $('.button[data-action="show_qr"]').click(function (event) {
