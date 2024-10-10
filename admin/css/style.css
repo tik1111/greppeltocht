@@ -70,13 +70,13 @@ div.content {
   z-index: 999;
   display: flex;
   gap: 10px;
-}
 
-.buttons .button {
-  aspect-ratio: 1;
-  width: 60px;
-  line-height: 40px;
-  text-align: center;
+  .button {
+    aspect-ratio: 1;
+    width: 75px;
+    line-height: 40px;
+    text-align: center;
+  }
 }
 
 #map {
@@ -124,9 +124,9 @@ input {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
 }
 
 .button:hover {
