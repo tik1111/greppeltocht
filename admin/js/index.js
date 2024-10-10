@@ -27,9 +27,8 @@ $(document).ready(function () {
 
 function get_qrcode(open_popup = false) {
   if ($('[data-popup="qrcode"]').hasClass("open") || open_popup) {
-
-    if ($('[data-popup="qrcode"]').hasClass("open"){
-      navigator.geolocation.getCurrentPosition(function(position) {
+    if ($('[data-popup="qrcode"]').hasClass("open")) {
+      navigator.geolocation.getCurrentPosition(function (position) {
         console.log(position.coords.latitude);
         console.log(position.coords.longitude);
       });
