@@ -21,7 +21,7 @@
         SET
             hider_id = '".$data['team_id']."',
             seeker_id = '".$_SESSION['id']."',
-            datetime = '".$data['team_id']."',
+            datetime = '".date('d-m-Y H:i:s', $data['time'])."',
             latitude = '".$data['latitude']."',
             longitude = '".$data['longitude']."'
     ";
