@@ -49,4 +49,10 @@
       <span class="button" data-action="show_qr">
         <i class="fas fa-qrcode"></i>
       </span>
+
+      <button type="button" class="button" id="openreader-single"
+        data-qrr-target="#single"
+        data-qrr-audio-feedback="true">
+          <i class="fas fa-plus"></i>
+      </button>
     </div>

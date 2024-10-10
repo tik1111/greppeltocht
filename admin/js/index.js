@@ -28,9 +28,6 @@ $(document).ready(function () {
 function get_qrcode(open_popup = false) {
   if ($('[data-popup="qrcode"]').hasClass("open") || open_popup) {
     navigator.geolocation.getCurrentPosition(function (position) {
-      // console.log(position.coords.latitude);
-      // console.log(position.coords.longitude);
-
       $("input.latitude").val(position.coords.latitude);
       $("input.longitude").val(position.coords.longitude);
     });
