@@ -8,6 +8,8 @@
     $response_array['data'] = [
         'team_id' => $_SESSION['id'],
         'time' => time(),
+        'latitude' => $_GET['latitude'],
+        'longitude' => $_GET['longitude'],
     ];
 
     $response_array['image'] = '../admin/includes/qrcode.php?s=qr&d='. urlencode(json_encode($response_array['data'])) . '&sf=8&ms=r';
