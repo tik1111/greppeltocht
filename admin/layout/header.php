@@ -46,13 +46,17 @@
     </nav>
 
     <div class="buttons">
-      <span class="button" data-action="show_qr">
-        <i class="fas fa-qrcode"></i>
-      </span>
+      <?php if ($_SESSION['role'] == 1 || $_SESSION['role'] == 2) { ?>
+        <span class="button" data-action="show_qr">
+          <i class="fas fa-qrcode"></i>
+        </span>
+      <?php } ?>
 
-      <button type="button" class="button qrcode-reader" id="openreader-single"
-        data-qrr-target="#data"
-        data-qrr-audio-feedback="true">
-          <i class="fas fa-plus"></i>
-      </button>
+      <?php if ($_SESSION['role'] == 1 || $_SESSION['role'] == 3) { ?>
+        <button type="button" class="button qrcode-reader" id="openreader-single"
+          data-qrr-target="#data"
+          data-qrr-audio-feedback="true">
+            <i class="fas fa-plus"></i>
+        </button>
+      <?php } ?>
     </div>
