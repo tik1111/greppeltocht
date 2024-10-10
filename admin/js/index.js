@@ -31,11 +31,10 @@ function get_qrcode(open_popup = false) {
     let longitude = "";
 
     navigator.geolocation.getCurrentPosition(function (position) {
-      console.log(position.coords.latitude);
-      console.log(position.coords.longitude);
-
-      latitude = position.coords.latitude;
-      longitude = position.coords.longitude;
+      // console.log(position.coords.latitude);
+      // console.log(position.coords.longitude);
+      latitude.push(position.coords.latitude);
+      longitude.push(position.coords.longitude);
     });
 
     $.ajax({
