@@ -161,11 +161,11 @@ input {
 
   .popup__container {
     position: relative;
-    margin: 0 auto;
+    margin: 0 20px;
     background: white;
     padding: 20px;
-    margin-top: calc(50vh - 264px);
-    width: 304px;
+    margin-top: 20px;
+    width: calc(100% - 40px);
   }
 
   .popup__close {
@@ -186,6 +186,10 @@ input {
       display: block;
       font-size: 32px;
       font-weight: bold;
+    }
+
+    img {
+      width: 100%;
     }
   }
 }
