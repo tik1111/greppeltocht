@@ -23,6 +23,10 @@ $(document).ready(function () {
   setInterval(function () {
     get_qrcode(false);
   }, 10000);
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(locationSuccess);
+  }
 });
 
 function get_qrcode(open_popup = false) {
@@ -42,4 +46,10 @@ function get_qrcode(open_popup = false) {
       },
     });
   }
+}
+
+function locationSuccess(position) {
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+  alert("Latitude: " + latitude + "<br>Longitude: " + longitude);
 }
