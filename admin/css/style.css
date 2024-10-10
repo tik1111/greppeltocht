@@ -181,6 +181,11 @@ input {
 
   .popup__content {
     h2 {
+      font-family: "Patua One", serif;
+      margin: 0;
+      display: block;
+      font-size: 32px;
+      font-weight: bold;
     }
   }
 }

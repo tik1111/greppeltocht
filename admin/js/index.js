@@ -16,9 +16,13 @@ $(document).ready(function () {
     get_qrcode(true);
   });
 
+  $(".popup__close").click(function (event) {
+    $('[data-popup="qrcode"]').removeClass("open");
+  });
+
   setInterval(function () {
     get_qrcode(false);
-  }, 1000);
+  }, 10000);
 });
 
 function get_qrcode(open_popup = false) {
