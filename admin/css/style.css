@@ -160,8 +160,27 @@ input {
   }
 
   .popup__container {
+    position: relative;
     margin: 0 auto;
+    background: white;
+    padding: 20px;
     margin-top: calc(50vh - 264px);
-    width: 264px;
+    width: 304px;
+  }
+
+  .popup__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #808080;
+  }
+
+  .popup__content {
+    h2 {
+    }
   }
 }

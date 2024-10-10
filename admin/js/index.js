@@ -30,6 +30,7 @@ function get_qrcode(open_popup = false) {
       dataType: "json",
       success: function (data) {
         $(".qrcode-image").attr("src", data.image);
+        $(".qrcode-time").html(data.time);
 
         if (open_popup) {
           $('[data-popup="qrcode"]').addClass("open");
