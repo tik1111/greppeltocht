@@ -27,6 +27,8 @@
     ";
     mysqli_query($con, $sql );
 
+    echo $sql;
+
     $response_array['succes'] = true;
 
     echo json_encode($response_array);
