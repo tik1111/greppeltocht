@@ -51,7 +51,7 @@
       </span>
 
       <button type="button" class="button qrcode-reader" id="openreader-single"
-        data-qrr-target="#single"
+        data-qrr-target="#data"
         data-qrr-audio-feedback="true">
           <i class="fas fa-plus"></i>
       </button>

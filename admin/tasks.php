@@ -6,16 +6,7 @@
     </div>
 
     <div class="content">
-        <form action="">
-            <input id="single" type="text" size="255">
 
-            <button type="button" class="button qrcode-reader" id="openreader-single"
-                data-qrr-target="#single"
-                data-qrr-audio-feedback="true">
-                Scan code
-            </button>
-
-        </form>
 
         <!-- https://blog.minhazav.dev/research/html5-qrcode -->
 
